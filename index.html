@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Time tracking dashboard</title>
+    <script src="script.js" text=" type/javascript" onload="daily()"></script>
+</head>
+<body onload="daily()">
+    <section class="container" >
+            <div class="container-user">
+
+                    <div class="user">
+                        <img src="estilos/images/image-jeremy.png">
+                        <h3>Report for</h3>
+                        <p>Jeremy Robson</p>
+                    </div><!--user-->
+
+                    <div class="menu">
+                        <nav>
+                            <ul>
+                                <li><a onclick="daily()" id="dia" >Daily</a></li>
+                                <li><a onclick="weekly()" id="semana" >Weekly</a></li>
+                                <li><a onclick="monthly()" id="mes">Monthly</a></li>
+                            </ul>
+                        </nav>
+                    </div><!--menu-->
+
+            </div><!--container-user-->
+            <div class="box laranja">
+                <img src="estilos/images/icon-work.svg"  >
+                <div class="info">
+                    <h3>Work</h3>
+                    <img src="estilos/images/icon-ellipsis.svg">
+                    <h2 id="work">hrs</h2>
+                    <p id="work-sub">Last Week - x horas</p>
+                </div>
+            </div>
+            
+            <div class="box azul">
+                <img src="estilos/images/icon-play.svg" >
+                <div class="info">
+                    
+                    <h3>Play</h3>
+                    <img src="estilos/images/icon-ellipsis.svg">
+                    <h2 id="play">X horas</h2>
+                    <p id="play-sub">Last Week - x horas</p>
+                </div>
+            </div>
+            <div class="box rosa">
+                <img src="estilos/images/icon-study.svg" >
+                <div class="info">
+                    
+                    <h3>Study</h3>
+                    <img src="estilos/images/icon-ellipsis.svg">
+                    <h2 id="study">X horas</h2>
+                    <p id="study-sub">Last Week - x horas</p>
+                </div>
+            </div>
+            <div class="box verde">
+                <img src="estilos/images/icon-exercise.svg" >
+                <div class="info baixo">
+                    <h3>Exercise</h3>
+                    <img src="estilos/images/icon-ellipsis.svg">
+                    <h2 id="exercise">X horas</h2>
+                    <p id="exercise-sub">Last Week - x horas</p>
+                </div>
+            </div>
+            <div class="box roxo">
+                <img src="estilos/images/icon-social.svg" >
+                <div class="info baixo">
+                    <h3>Social</h3>
+                    <img src="estilos/images/icon-ellipsis.svg">
+                    <h2 id="social">X horas</h2>
+                    <p id="social-sub">Last Week - x horas</p>
+                </div>
+            </div>
+            <div class="box amarelo">
+                <img src="estilos/images/icon-self-care.svg" >
+                <div class="info baixo">
+                    <h3>Self Care</h3>
+                    <img src="estilos/images/icon-ellipsis.svg">
+                    <h2 id="self">X horas</h2>
+                    <p id="self-sub">Last Week - x horas</p>
+                </div>
+            </div>
+
+    </section>
+    
+</body>
+</html>
