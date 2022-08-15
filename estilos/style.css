@@ -11,6 +11,10 @@ html,body{
 
     margin: 0 auto;
     display:grid;
+    grid-template-columns:
+        "col"
+        "col";
+    grid-template-row: auto;
     grid-template-areas: 
     "container-user box box box"
     "container-user box box box" ;
